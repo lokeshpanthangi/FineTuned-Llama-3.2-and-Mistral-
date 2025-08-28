@@ -64,7 +64,7 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 ```
 
-#### LoRA Configuration
+#### QLoRA Configuration
 ```python
 lora_config = LoraConfig(
     r=16,                           # Rank of adaptation
@@ -204,6 +204,8 @@ FineTuner/
 
 ### Model Selection Guide
 
+### Everything is FineTuned in Lightning AI , Models & Dataset is from HuggingFace
+
 #### Mistral 7B Fine-tuned
 - **Best for:** High-accuracy medical applications
 - **Memory:** ~4-6GB VRAM required
@@ -219,7 +221,7 @@ FineTuner/
 - **Memory:** ~1-2GB VRAM required
 - **Use cases:** Personal health assistants, embedded systems
 
-## 📝 Future Improvements
+## 📝 Future Improvements can be Done
 
 ### Potential Enhancements
 1. **Multi-turn Conversations:** Context-aware medical dialogues
@@ -228,11 +230,6 @@ FineTuner/
 4. **Domain Expansion:** Additional medical specialties training
 5. **Multilingual Support:** International medical knowledge base
 
-### Advanced Techniques
-- **Instruction Tuning:** Enhanced prompt following
-- **RLHF:** Human feedback integration
-- **Chain-of-Thought:** Explicit reasoning processes
-- **Retrieval Augmentation:** External knowledge integration
 
 ## 🎉 Conclusion
 
